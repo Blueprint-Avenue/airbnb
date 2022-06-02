@@ -8,6 +8,7 @@ function Banner() {
 
 	return (
 		<div className="banner">
+			{/* Search */}
 			<div className="banner__search">
 				{showSearch && <Search />}
 				<Button
