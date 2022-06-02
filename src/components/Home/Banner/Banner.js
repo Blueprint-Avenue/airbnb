@@ -2,8 +2,10 @@ import {Button} from "@material-ui/core";
 import React, {useState} from "react";
 import Search from "../Search/Search";
 import "./banner.css";
+import {useNavigate} from "react-router-dom";
 
 function Banner() {
+	const navigate = useNavigate();
 	const [showSearch, setShowSearch] = useState(false);
 
 	return (
@@ -24,7 +26,9 @@ function Banner() {
 				<h5>
 					Plan a different kind of getaway to uncover the hidden gems near you
 				</h5>
-				<Button variant="outlined">Explore Nearby</Button>
+				<Button onClick={() => navigate("/search")} variant="outlined">
+					Explore Nearby
+				</Button>
 			</div>
 		</div>
 	);
