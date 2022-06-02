@@ -1,4 +1,5 @@
-import {Search} from "@material-ui/icons";
+import {Avatar} from "@material-ui/core";
+import {ExpandMore, Language, Search} from "@material-ui/icons";
 import React from "react";
 import "./header.css";
 
@@ -18,6 +19,12 @@ function Header() {
 				<Search />
 			</div>
 			{/* Header Right */}
+			<div className="header__right">
+				<p>Become a host</p>
+				<Language />
+				<ExpandMore />
+				<Avatar />
+			</div>
 		</div>
 	);
 }
